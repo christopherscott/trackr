@@ -1,0 +1,29 @@
+{
+  "name": "trackr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node startup.js",
+    "dev": "nodemon startup.js",
+    "env": "env",
+    "lint": "eslint ./*.js; exit 0"
+  },
+  "author": "",
+  "license": "ISC",
+  "jspm": {
+    "directories": {},
+    "devDependencies": {
+      "babel": "npm:babel-core@^5.1.13",
+      "babel-runtime": "npm:babel-runtime@^5.1.13",
+      "core-js": "npm:core-js@^0.9.4"
+    }
+  },
+  "dependencies": {
+    "express": "^4.13.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^3.1.17"
+  }
+}
