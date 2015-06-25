@@ -18,9 +18,9 @@ server.use((req, res, next) => {
   let context = trackr.createContext();
 
   // 2. retrieve action context, so we can execute an action
+  // 3. execute a navigate action
   context
     .getActionContext()
-    // 3. execute a navigate action
     .executeAction(navigateAction, { url: req.url }, (err) => {
 
       // 4. handle any errors
